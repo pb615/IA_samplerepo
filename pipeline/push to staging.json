@@ -1,0 +1,23 @@
+{
+	"name": "push to staging",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "counter",
+					"value": "abc"
+				}
+			}
+		],
+		"variables": {
+			"counter": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}

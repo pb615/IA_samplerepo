@@ -8,13 +8,16 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "var1",
-					"value": "sample"
+					"variableName": "var2",
+					"value": "sample run"
 				}
 			}
 		],
 		"variables": {
 			"var1": {
+				"type": "String"
+			},
+			"var2": {
 				"type": "String"
 			}
 		},

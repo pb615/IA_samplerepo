@@ -14,7 +14,7 @@ jobs:
         - uses: actions/checkout@v2
         - uses: azure/synapse-workspace-deployment@release-1.0
         with:
-          TargetWorkspaceName: 'target workspace name'
+          TargetWorkspaceName: 'worsspacetarget'
           TemplateFile: './path of the TemplateForWorkspace.json'
           ParametersFile: './path of the TemplateParametersForWorkspace.json'
           OverrideArmParameters: './path of the parameters.yaml'

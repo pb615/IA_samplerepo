@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: workspace deployment
+
+on:
+    push:
+        branches: [ publish_branch ]
+jobs:
+    release:
+        # You also can use the self-hosted runners.
+        runs-on: windows-latest
+        steps:
+        # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it.
+        - uses: actions/checkout@v2
+        - uses: azure/synapse-workspace-deployment@release-1.0
+        with:
+          TargetWorkspaceName: 'target workspace name'
+          TemplateFile: './path of the TemplateForWorkspace.json'
+          ParametersFile: './path of the TemplateParametersForWorkspace.json'
+          OverrideArmParameters: './path of the parameters.yaml'
+          environment: 'Azure Public'
+          resourceGroup: 'target workspace resource group'
+          --clientId: ${{secrets.CLIENTID}}
+          --clientSecret:  ${{secrets.CLIENTSECRET}}
+          clientId: '51e7599e-c37b-4d2f-8afb-7d9fddfc845e'
+          clientSecret:  '1vY8Q~j3qmQArJceMqV3Tv1SdRs.DHQ78p.0VcHr'
+          subscriptionId: 'c1b3475f-c05a-49d9-b050-954947cc5c0c'
+          tenantId: '85542c9f-eaa7-4e74-89b5-aadeb181fe60'
+          DeleteArtifactsNotInTemplate: 'true'
+          managedIdentity: 'False'

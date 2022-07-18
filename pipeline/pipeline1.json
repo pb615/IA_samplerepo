@@ -8,8 +8,8 @@
 				"dependsOn": [],
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "var2",
-					"value": "sample run"
+					"variableName": "var1",
+					"value": "sample run 3"
 				}
 			}
 		],

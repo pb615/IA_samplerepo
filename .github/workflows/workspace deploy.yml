@@ -17,7 +17,7 @@ jobs:
           TargetWorkspaceName: 'worsspacetarget'
           TemplateFile: './IA_samplerepo/workspacesamplesynapsetogit02/TemplateForWorkspace.json'
           ParametersFile: './IA_samplerepo/workspacesamplesynapsetogit02/TemplateParametersForWorkspace.json'
-          OverrideArmParameters: './path of the parameters.yaml'
+          --OverrideArmParameters: './path of the parameters.yaml'
           environment: 'Azure Public'
           resourceGroup: 'target workspace resource group'
           --clientId: ${{secrets.CLIENTID}}

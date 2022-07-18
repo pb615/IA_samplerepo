@@ -15,8 +15,8 @@ jobs:
         - uses: azure/synapse-workspace-deployment@release-1.0
         with:
           TargetWorkspaceName: 'worsspacetarget'
-          TemplateFile: './path of the TemplateForWorkspace.json'
-          ParametersFile: './path of the TemplateParametersForWorkspace.json'
+          TemplateFile: './IA_samplerepo/workspacesamplesynapsetogit02/TemplateForWorkspace.json'
+          ParametersFile: './IA_samplerepo/workspacesamplesynapsetogit02/TemplateParametersForWorkspace.json'
           OverrideArmParameters: './path of the parameters.yaml'
           environment: 'Azure Public'
           resourceGroup: 'target workspace resource group'

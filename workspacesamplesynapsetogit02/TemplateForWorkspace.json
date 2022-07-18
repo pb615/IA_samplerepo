@@ -22,6 +22,10 @@
 		"workspacesamplesynapsetogit02-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsforsynstorageacc02.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorageLinkedService01_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsforsynstorageacc02.dfs.core.windows.net/"
 		}
 	},
 	"variables": {
@@ -173,6 +177,25 @@
 				"annotations": []
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/AzureDataLakeStorageLinkedService01')]",
+			"type": "Microsoft.Synapse/workspaces/linkedServices",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobFS",
+				"typeProperties": {
+					"url": "[parameters('AzureDataLakeStorageLinkedService01_properties_typeProperties_url')]"
+				},
+				"connectVia": {
+					"referenceName": "AutoResolveIntegrationRuntime",
+					"type": "IntegrationRuntimeReference"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('workspaceId'), '/integrationRuntimes/AutoResolveIntegrationRuntime')]"
+			]
 		}
 	]
 }

@@ -16,6 +16,9 @@
 		},
 		"workspacesamplesynapsetogit02-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://adlsforsynstorageacc02.dfs.core.windows.net"
+		},
+		"AzureDataLakeStorageLinkedService01_properties_typeProperties_url": {
+			"value": "https://adlsforsynstorageacc02.dfs.core.windows.net/"
 		}
 	}
 }

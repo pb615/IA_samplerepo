@@ -1,0 +1,9 @@
+{
+	"name": "sampleiaadf02",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "4be4308a-16b1-422a-b712-6a935a9e696a",
+		"tenantId": "85542c9f-eaa7-4e74-89b5-aadeb181fe60"
+	}
+}

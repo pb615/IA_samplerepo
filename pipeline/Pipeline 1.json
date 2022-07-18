@@ -3,13 +3,22 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "var1",
-				"description": "sample 1",
+				"name": "var",
+				"description": "sample ",
 				"type": "SetVariable",
 				"dependsOn": [],
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "var1",
+					"value": "sample"
+				}
 			}
 		],
+		"variables": {
+			"var1": {
+				"type": "String"
+			}
+		},
 		"annotations": []
 	}
 }

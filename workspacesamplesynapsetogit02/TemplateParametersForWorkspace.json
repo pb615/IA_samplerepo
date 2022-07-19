@@ -11,14 +11,14 @@
 		"workspacesamplesynapsetogit02-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
+		"AzureDataLakeStorageLinkedService01_properties_typeProperties_url": {
+			"value": "https://adlsforsynstorageacc02.dfs.core.windows.net/"
+		},
 		"workspacesamplesynapsetogit01-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://adlsforsynstorageacc01.dfs.core.windows.net"
 		},
 		"workspacesamplesynapsetogit02-WorkspaceDefaultStorage_properties_typeProperties_url": {
 			"value": "https://adlsforsynstorageacc02.dfs.core.windows.net"
-		},
-		"AzureDataLakeStorageLinkedService01_properties_typeProperties_url": {
-			"value": "https://adlsforsynstorageacc02.dfs.core.windows.net/"
 		}
 	}
 }

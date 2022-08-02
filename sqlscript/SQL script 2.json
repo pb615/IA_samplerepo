@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [EmpId]\n,[Name]\n,[Grade]\n,[Age]\n,[Gender]\n,[SurrKey]\n,[Marks]\n FROM [dbo].[part-00000-da61119d-a9b1-47df-892b-af402f799d9b-c000.snappy (1)]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dedicatepool01",
+				"poolName": "dedicatepool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

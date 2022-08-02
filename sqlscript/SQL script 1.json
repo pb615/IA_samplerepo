@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "CREATE TABLE [part-00000-da61119d-a9b1-47df-892b-af402f799d9b-c000.snappy (1)] (\n [EmpId] VARCHAR(30) NULL , \n [Name] VARCHAR(30) NULL , \n [Grade] VARCHAR(30) NULL , \n [Age] VARCHAR(30) NULL , \n [Gender] VARCHAR(30) NULL , \n [SurrKey] int NULL , \n [Marks] int NULL);\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dedicatepool01",
+				"poolName": "dedicatepool01"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

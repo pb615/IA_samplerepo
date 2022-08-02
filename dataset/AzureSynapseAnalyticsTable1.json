@@ -1,0 +1,47 @@
+{
+	"name": "AzureSynapseAnalyticsTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [
+			{
+				"name": "EmpId",
+				"type": "varchar"
+			},
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Grade",
+				"type": "varchar"
+			},
+			{
+				"name": "Age",
+				"type": "varchar"
+			},
+			{
+				"name": "Gender",
+				"type": "varchar"
+			},
+			{
+				"name": "SurrKey",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Marks",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "part-00000-da61119d-a9b1-47df-892b-af402f799d9b-c000.snappy (1)"
+		}
+	}
+}

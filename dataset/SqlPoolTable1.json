@@ -1,0 +1,16 @@
+{
+	"name": "SqlPoolTable1",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "part-00000-da61119d-a9b1-47df-892b-af402f799d9b-c000.snappy (1)"
+		},
+		"sqlPool": {
+			"referenceName": "dedicatepool01",
+			"type": "SqlPoolReference"
+		}
+	}
+}

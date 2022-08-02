@@ -1,0 +1,130 @@
+{
+	"name": "Pipeline 2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "SqlDWSink",
+						"writeBehavior": "Insert",
+						"sqlWriterUseTableLock": false
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "EmpId",
+									"type": "String"
+								},
+								"sink": {
+									"name": "EmpId",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Name",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Name",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Grade",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Grade",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Age",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Age",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Gender",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Gender",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "SurrKey",
+									"type": "Int64"
+								},
+								"sink": {
+									"name": "SurrKey",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Marks",
+									"type": "Int32"
+								},
+								"sink": {
+									"name": "Marks",
+									"type": "Int32"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "Parquet1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSynapseAnalyticsTable1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "TestPOC"
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-08-01T06:37:55Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}
